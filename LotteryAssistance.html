@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ithuba Lottery Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="modern-header">
+        <h1>Ithuba Lottery Assistant</h1>
+    </header>
+
+    <main class="modern-container">
+        <section id="menu" class="card modern-card">
+            <h2>Main Menu</h2>
+            <div class="button-group">
+                <button id="generateNumbers" class="modern-button">Generate Random Numbers</button>
+                <button id="analyzePatterns" class="modern-button">Analyze Past Patterns</button>
+                <button id="predictNumbers" class="modern-button">Generate Predicted Numbers</button>
+            </div>
+        </section>
+
+        <section id="output" class="card modern-card">
+            <h2>Output</h2>
+            <div id="outputContent" class="modern-output">
+                <p>Select an option from the menu to view results.</p>
+            </div>
+        </section>
+
+        <section id="upload" class="card modern-card">
+            <h2>Upload CSV Document</h2>
+            <div id="dropZone" class="drop-zone">
+                <p>Drag and drop your CSV file here, or click to upload.</p>
+                <input type="file" id="fileInput" accept=".csv" hidden>
+            </div>
+        </section>
+
+        <section id="settings" class="card modern-card">
+            <h2>Settings</h2>
+            <div class="settings-group">
+                <label for="themeSelect">Choose Theme:</label>
+                <select id="themeSelect" class="modern-select">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <div class="settings-group">
+                <label for="lotteryType">Lottery Type:</label>
+                <select id="lotteryType" class="modern-select">
+                    <option value="lotto">Lotto</option>
+                    <option value="powerball">PowerBall</option>
+                    <option value="daily">Daily Lotto</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-footer">
+        <p>&copy; 2024 Ithuba Lottery Assistant. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
